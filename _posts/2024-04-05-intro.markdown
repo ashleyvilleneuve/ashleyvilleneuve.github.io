@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "About me"
+date:   2024-04-05 23:27:25 -0700
+categories: welcome
+---
+Welcome! I'm Ashley, a frontend developer with eight years at Shopify, mostly with the Shopify Plus Front End Development team. I help Plus Merchants optimize their storefronts, implement custom features, and craft discount logic using the Script Editor. I also contribute to tools that improve our workflows, including a CLI multitool called the PUB tool, a Rails/React dashboard, and a React Chrome extension. 
+
+Check out some of my recent work:
+
+* [Code mentor](https://ashleyvilleneuve.github.io/code-mentor/): a React + Vite webapp powered by the Open AI API
+
+![Two adorable large dogs checking out some salmon minnows](/assets/IMG_4198.jpeg "Two adorable large dogs checking out some salmon minnows")
+
+Here are my dogs hanging out in a forest!
