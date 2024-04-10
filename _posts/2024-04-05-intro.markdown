@@ -10,6 +10,16 @@ Check out some of my recent work:
 
 * [Code mentor](https://ashleyvilleneuve.github.io/code-mentor/): a React + Vite webapp powered by the Open AI API
 
+[//]: # ([Customfinity](https://admin.shopify.com/store/customizer-using-variants-test): a Shopify app made with React and Remix [Project third](https://link.com): a React + Vite webapp powered by the Open AI API)
+
+
+______
+
+[Download my resume](resume.pdf)
+
+------
+
+
 ![Two adorable large dogs checking out some salmon minnows](/assets/IMG_4198.jpeg "Two adorable large dogs checking out some salmon minnows")
 
 Here are my dogs hanging out in a forest!
