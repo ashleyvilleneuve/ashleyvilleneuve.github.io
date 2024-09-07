@@ -10,11 +10,11 @@ import Seo from "../../../../node_modules/@lekoarts/gatsby-theme-cara/src/compon
 
 const Cara = () => (
   <Layout>
-    <Parallax pages={2.7}>  
+    <Parallax pages={2.9}>  
       <Hero offset={0} factor={0.7} /> 
       <Projects offset={0.7} factor={1} />  
       <About offset={1.7} factor={0.5} />  
-      <Contact offset={2.2} factor={0.5} />  
+      <Contact offset={2.3} factor={0.5} />  
     </Parallax>
 
   </Layout>

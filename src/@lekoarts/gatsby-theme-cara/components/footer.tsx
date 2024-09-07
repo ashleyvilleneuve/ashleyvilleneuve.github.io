@@ -7,40 +7,23 @@ const Footer = () => {
 
   return (
     <Box as="footer" variant="footer">
-      <button
-        sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3 }}
-        onClick={() => {
-          const next = isDark ? `light` : `dark`
-          setColorMode(next)
-          document.documentElement.classList.value = `theme-ui-${next}`
-        }}
-        type="button"
-        data-testid="color-mode-toggle"
-        aria-label={isDark ? `Activate Light Mode` : `Activate Dark Mode`}
-      >
-        {isDark ? `Light` : `Dark`}
-      </button>
-      Copyright &copy; {new Date().getFullYear()}. All rights reserved.
+      
+      Copyright &copy; {new Date().getFullYear()}
       <br />
       <Flex
         sx={{
           justifyContent: `center`,
           alignItems: `center`,
-          mt: 3,
+          mt: 1,
           color: `text`,
           fontWeight: `semibold`,
           a: { color: `text` },
+          fontSize: `x-small`
         }}
       >
-        {isDark ? (
-          <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_v2-light_w30.png" alt="LekoArts Logo" />
-        ) : (
-          <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_v2_w30.png" alt="LekoArts Logo" />
-        )}
-        {` `}
         <Link
           aria-label="Link to the theme's GitHub repository"
-          sx={{ ml: 2 }}
+          sx={{ ml: 1 }}
           href="https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-cara"
         >
           Theme
