@@ -2,7 +2,7 @@ name: Deploy Portfolio
 
 on:
   push:
-    branches: [ "gh-pages" ]
+    branches: [ "main" ]  # Changed from gh-pages to main
   workflow_dispatch:
 
 permissions:
@@ -37,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './dist'  # or './build' depending on your build output directory
+          path: './public'  # or './build' depending on your build output directory
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
