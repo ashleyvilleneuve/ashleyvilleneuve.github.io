@@ -1,9 +1,15 @@
 import * as React from "react"
-import ProjectCard from "/Users/ashvilleneuve/gatsby-starter-portfolio-cara/node_modules/@lekoarts/gatsby-theme-cara/src/components/project-card"
+import ProjectCard from "./project-card"
 
 const MdxComponents = {
-  ProjectCard: ({ link, title, bg, children, ...props }: any) => (
-    <ProjectCard {...props} link={link} title={title} bg={bg}>
+  ProjectCard: ({ link, title, bg, children, caseStudy, ...props }: any) => (
+    <ProjectCard 
+      link={link}
+      title={title}
+      bg={bg}
+      caseStudy={caseStudy}
+      {...props}
+    >
       {children}
     </ProjectCard>
   ),
