@@ -10,7 +10,12 @@ module.exports = {
     author: `@ashleyvilleneuve`,
   },
   plugins: [
-    "@lekoarts/gatsby-theme-cara",
+    {
+      resolve: `@lekoarts/gatsby-theme-cara`,
+      options: {
+        initialColorModeName: `dark`, // Force dark mode
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

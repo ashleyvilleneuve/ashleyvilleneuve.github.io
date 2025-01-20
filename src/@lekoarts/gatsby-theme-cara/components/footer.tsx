@@ -1,43 +1,53 @@
 /** @jsx jsx */
-import { Box, Flex, Link, useColorMode, jsx } from "theme-ui"
+import { jsx, useColorMode } from "theme-ui"
 
 const Footer = () => {
-  const [colorMode, setColorMode] = useColorMode<"light" | "dark">()
-  const isDark = colorMode === `dark`
+  const [colorMode] = useColorMode()
 
   return (
-    <Box as="footer" variant="footer">
-      
+    <footer
+      sx={{
+        variant: "footer",
+        textAlign: "center",
+        padding: 3,
+      }}
+    >
       Copyright &copy; {new Date().getFullYear()}
       <br />
-      <Flex
+      <div
         sx={{
-          justifyContent: `center`,
-          alignItems: `center`,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
           mt: 1,
-          color: `text`,
-          fontWeight: `semibold`,
-          a: { color: `text` },
-          fontSize: `x-small`
+          color: "text",
+          fontWeight: "semibold",
+          fontSize: "x-small",
+          a: { 
+            color: "text",
+            textDecoration: "none",
+            "&:hover": {
+              textDecoration: "underline"
+            }
+          }
         }}
       >
-        <Link
+        <a
           aria-label="Link to the theme's GitHub repository"
           sx={{ ml: 1 }}
           href="https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-cara"
         >
           Theme
-        </Link>
-        <div sx={{ mx: 1 }}>by</div>
-        {` `}
-        <Link
+        </a>
+        <span sx={{ mx: 1 }}>by</span>
+        <a
           aria-label="Link to the theme author's website"
           href="https://www.lekoarts.de?utm_source=cara&utm_medium=Theme"
         >
           LekoArts
-        </Link>
-      </Flex>
-    </Box>
+        </a>
+      </div>
+    </footer>
   )
 }
 

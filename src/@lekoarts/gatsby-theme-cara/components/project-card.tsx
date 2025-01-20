@@ -28,7 +28,7 @@ const ProjectCard = ({ link, title, children, bg, caseStudy }: ProjectCardProps)
         <div
           sx={{
             position: 'fixed',
-            inset: 0,  // Shorthand for top/right/bottom/left: 0
+            inset: 0,  
             backgroundColor: 'rgba(0, 0, 0, 0.5)',
             zIndex: 9998,
           }}
@@ -44,7 +44,7 @@ const ProjectCard = ({ link, title, children, bg, caseStudy }: ProjectCardProps)
           top: isFlipped ? '50%' : 'auto',
           transform: isFlipped ? 'translate(-50%, -50%)' : 'none',
           width: isFlipped ? '75%' : '100%',
-          height: isFlipped ? '75vh' : '300px', // Simplified height handling
+          height: isFlipped ? '600px' : '300px', 
           zIndex: isFlipped ? 9999 : 1,
           transformOrigin: 'center',
           transition: 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)',

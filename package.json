@@ -18,11 +18,13 @@
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^5.1.4",
+    "@types/styled-components": "^5.1.34",
     "gatsby": "^5.13.6",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-webpack-statoscope": "^1.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.14"
   },
   "devDependencies": {
     "@types/node": "^18.15.0",
