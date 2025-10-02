@@ -1,0 +1,35 @@
+import CaseStudyLayout from "../../components/CaseStudyLayout";
+
+<CaseStudyLayout
+  title="Design Token → Tailwind Migration"
+  subtitle="Turning Figma tokens into a scalable, semantic utility system"
+>
+**Date:** 2025  
+**Role:** Lead Frontend / Systems Architecture  
+**Impact:** Unified class naming, faster reviews, and easier cross‑brand reuse.
+
+## Challenge
+Multiple projects had drifted styles: inline hex colors, ad hoc utilities, and one-off patterns. Designers were shipping consistent tokens in Figma; code didn’t reflect that system reliably.
+
+## Solution
+I authored a semantic Tailwind layer mapped directly to Figma tokens and CSS variables (e.g., `text-body-base`, `bg-brand-primary`, `text-text-inverse`, `button-primary`). I also wrote a **migration guide** with quick find/replace patterns and a **priority order** (colors → type → spacing) so teams could refactor without blocking feature delivery.
+
+**Highlights**
+- Token categories: brand/surface/text/interactive/typography/spacing.
+- Semantic typography helpers (`text-heading-hero`, `text-body-base`) via `@apply`.
+- Device + semantic spacing tokens using CSS variables for clamp-based scaling.
+- Pre-built button + link recipes to avoid re-inventing component styles.
+
+## Impact
+- **Consistency:** Designers and devs spoke the same language; code reviews got faster.
+- **Maintainability:** New brand onboarding became straightforward; fewer “mystery styles.”
+- **Quality:** Baked-in accessibility defaults and predictable contrast.
+
+## Artifacts
+- Token class map and migration doc (excerpted in my internal file `new-tailwind-classes.md`).
+- Before/after code excerpts showing inline hex → semantic utilities.
+- Optional: screenshots of Figma token panel alongside resulting class names.
+
+## My Role
+System design, Tailwind config, docs, developer enablement.
+</CaseStudyLayout>

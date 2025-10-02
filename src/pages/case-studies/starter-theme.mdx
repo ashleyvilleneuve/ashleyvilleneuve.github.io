@@ -1,0 +1,33 @@
+import CaseStudyLayout from "../../components/CaseStudyLayout";
+
+<CaseStudyLayout
+  title="Modular Shopify Starter Theme"
+  subtitle="Vite-powered build, reusable @theme blocks, and a component library that actually saves time"
+  date="2025"
+  role="Lead Frontend / Architecture"
+  impactHeadline="New builds scaffolded in minutes; junior devs can add features safely."
+>
+
+## Challenge
+Each new project started from scratch. Teams copied sections between repos, lost context, and re-solved the same problems. Onboarding took time and quality varied.
+
+## Solution
+I designed a **starter theme** with:
+- A branching model: `quick-start` (bare theme), `component-library`, and optionally `section-library`.
+- Vite code-splitting: `core`, `pages/*`, and **lazy features**.
+- A script to add features (`npm run add:[feature]`) that pulls a section and its dependencies from the library into the right places, marked **deferred** by default.
+- Clear docs for **CLS prevention**, **accessibility**, and **Figma → code** mapping.
+
+## Impact
+- **Speed:** Project bootstrap time dropped dramatically.
+- **Consistency:** Shared sections/blocks and docs raised the floor.
+- **Performance:** Lightweight core, lazy-loaded features, stable image/aspect-ratio patterns.
+
+## Artifacts
+- Repo structure diagram, sample `vite.config` entries, and a short demo of `npm run add:featured-products`.
+- Developer guide excerpts (lazy-load pattern, Tailwind safelist, image dimension rules).
+
+## My Role
+Architecture, build config, docs, and mentorship across the dev team.
+
+</CaseStudyLayout>
