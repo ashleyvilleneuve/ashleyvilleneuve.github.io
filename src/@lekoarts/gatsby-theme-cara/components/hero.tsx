@@ -79,7 +79,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
                 mr: "auto",
               }}
             >
-              Frontend Developer · Shopify Theme Architect · Design Systems
+              Lead Shopify Developer · Shopify Plus Architect
             </p>
 
             {/* Primary actions */}
@@ -224,6 +224,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
             >
               Featured Case Studies
             </h2>
+            <p>Selected work leading performance, scalability, and developer-experience improvements for Shopify Plus merchants.</p>
             <div
               sx={{
                 display: "grid",
